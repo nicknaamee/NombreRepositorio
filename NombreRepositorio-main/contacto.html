@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="barra-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Pag2.html">pag2</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="section"> <!-- Campos en ingles, debido a que corresponden a etiquetas de elementos del framework de bulma -->
+            <article class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        
+                        <form id="formContacto" novalidate>
+                            <div class="field">
+                                <label class="label" for="nombre">Nombre Completo:</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="nombre" name="nombre" placeholder="Ej: Nombre Apellido" autocomplete="name">
+                                </div>
+                                <p class="help is-danger" id="errorNombre"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="email">Correo Electrónico:</label>
+                                <div class="control">
+                                    <input class="input" type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com" autocomplete="email">
+                                </div>
+                                <p class="help is-danger" id="errorEmail"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="asunto">Asunto:</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre el curso" autocomplete="off">
+                                </div>
+                                <p class="help is-danger" id="errorAsunto"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="mensaje">Mensaje:</label>
+                                <div class="control">
+                                    <textarea class="textarea" id="mensaje" name="mensaje" placeholder="LoreipsumLoreipsumLoreipsumLoreipsum" rows="4"></textarea>
+                                </div>
+                                <p class="help is-danger" id="errorMensaje"></p>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit" class="button is-black is-fullwidth">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <p class="has-text-success has-text-weight-bold mt-3" id="mensajeExito" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2026 - Todos los derechos reservados | <strong>Subdirección del kizazo</strong>
+            </p>
+            <p>
+                <a href="index.html">Inicio</a> | <a href="contacto.html">Contacto</a> | <a href="Pag2.html">pag2</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

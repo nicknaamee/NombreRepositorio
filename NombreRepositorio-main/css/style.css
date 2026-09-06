@@ -1,0 +1,149 @@
+
+*, html, body, input, textarea, button, select {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #363636;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main, .main {
+    flex: 1;
+}
+
+/* 2. ENCABEZADO Y MENÚ DE NAVEGACIÓN */
+.header-principal {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+header nav {
+    border-bottom: 2px solid #000000;
+}
+
+.barra-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+}
+
+.barra-menu li {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    border-right: 1px solid #000000;
+    padding: 10px;
+}
+
+.barra-menu li:last-child {
+    border-right: none;
+}
+
+.barra-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+}
+
+/* 3. CAJAS Y ESTRUCTURA DE INDEX */
+.box {
+    border: 2px solid #dbdbdb;
+}
+
+.caja-contenido {
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.caja-formulario {
+    margin-top: 20px;
+}
+
+.caja-formulario input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* 4. FORMULARIO DE CONTACTO */
+.field {
+    margin-bottom: 1rem;
+}
+
+.input, .textarea {
+    border: 1px solid #000000;
+    width: 100%;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #000000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.button.is-black {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.button.is-black:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.help.is-danger {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* 5. PIE DE PÁGINA (FOOTER) */
+footer, .footer {
+    border-top: 2px solid #000000;
+    background-color: #ffff!important;
+    color: #000000 !important;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer a, .footer a {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+footer a:hover, .footer a:hover {
+    color: #cccccc !important;
+}
+
+/* 6. DISEÑO RESPONSIVO (MÓVIL) */
+@media (max-width: 600px) {
+    .barra-menu ul {
+        flex-direction: column;
+    }
+
+    .barra-menu li {
+        border-right: none;
+        border-bottom: 1px solid #000000;
+    }
+
+    .barra-menu li:last-child {
+        border-bottom: none;
+    }
+}
