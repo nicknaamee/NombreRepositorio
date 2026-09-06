@@ -12,6 +12,8 @@ body {
 
 .box {
     border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .barra-menu ul {
