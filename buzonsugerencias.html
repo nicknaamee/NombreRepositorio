@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basurero de Sugerencias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body class="p-5">
+
+    <section class="box" style="max-width: 600px; margin: 0 auto;">
+        <h1 class="title has-text-centered">Buzón (Basurero)</h1>
+
+        <div id="listaMensajes"></div>
+
+        <div class="has-text-centered mt-5">
+            <a href="index.html" class="button">Volver al Inicio</a>
+        </div>
+    </section>
+
+    <script>
+        var sugerencias = JSON.parse(localStorage.getItem("misSugerencias")) || [];
+        var contenedor = document.getElementById("listaMensajes");
+
+        if (sugerencias.length === 0) {
+            contenedor.innerHTML = "<p class='has-text-centered has-text-grey'>No hay sugerencias en el basurero aún.</p>";
+        } else {
+            for (var i = 0; i < sugerencias.length; i++) {
+                var texto = sugerencias[i];
+                contenedor.innerHTML = contenedor.innerHTML +
+                    "<div class='box mt-3' style='background-color: #ffe5e5; border-radius: 6px; border: 1px solid #ffb3b3;'>" +
+                    "<p>🗑️ " + texto + "</p>" +
+                    "</div>";
+            }
+        }
+    </script>
+</body>
+
+</html>

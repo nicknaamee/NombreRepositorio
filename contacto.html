@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="title">Contacto</h1>
+    </header>
+
+    <nav class="box p-0 mt-4 barra-navegacion">
+        <div class="contenedor-menu">
+            <a href="index.html" class="has-text-dark p-3 enlace-menu">Inicio</a>
+            <a href="contacto.html" class="has-text-dark p-3 enlace-menu">Contacto</a>
+            <a href="Pag2.html" class="has-text-dark p-3 enlace-menu">Otra Pagina</a>
+        </div>
+    </nav>
+
+
+    <main class="main">
+        <section class="box mt-4 seccion-centrada">
+            <article class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+
+                        <form id="formContacto" novalidate>
+                            <div class="field">
+                                <label class="label has-text-weight-normal" for="nombre">Nombre Completo:</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="nombre" name="nombre"
+                                        placeholder="Ej: Nombre Apellido" autocomplete="name">
+                                </div>
+                                <p class="help is-danger" id="errorNombre"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label has-text-weight-normal" for="email">Correo Electrónico:</label>
+                                <div class="control">
+                                    <input class="input" type="email" id="email" name="email"
+                                        placeholder="Ej: correo@ejemplo.com" autocomplete="email">
+                                </div>
+                                <p class="help is-danger" id="errorEmail"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label has-text-weight-normal" for="asunto">Asunto:</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="asunto" name="asunto"
+                                        placeholder="Ej: Consulta sobre el curso" autocomplete="off">
+                                </div>
+                                <p class="help is-danger" id="errorAsunto"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label has-text-weight-normal" for="mensaje">Mensaje:</label>
+                                <div class="control">
+                                    <textarea class="textarea" id="mensaje" name="mensaje"
+                                        placeholder="LoreipsumLoreipsumLoreipsumLoreipsum" rows="4"></textarea>
+                                </div>
+                                <p class="help is-danger" id="errorMensaje"></p>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit" class="button borde-curvo is-fullwidth">Enviar
+                                        Mensaje</button>
+                                </div>
+                            </div>
+                            <p class="has-text-success has-text-weight-bold mt-3" id="mensajeExito"
+                                style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <div id="modalExito" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-text-centered box caja-modal borde-estandar">
+            <figure class="image is-inline-block mb-3 gif-exito">
+                <img src="https://media1.tenor.com/m/587AABroBfwAAAAC/dance-skeleton.gif" alt="Éxito"
+                    class="borde-curvo">
+            </figure>
+            <h2 class="title is-4 has-text-success">¡Formulario enviado!</h2>
+            <p class="mb-4 has-text-success-dark">Pronto nos pondremos en contacto.</p>
+            <button id="cerrarModal" class="button is-success is-outlined borde-curvo">Entendido</button>
+        </div>
+    </div>
+
+    <footer class="footer has-text-centered">
+        <p>Pie de página</p>
+        <p class="mt-2">
+            &copy; 2026 - Todos los derechos reservados | <strong>Subdirección del kizazo</strong>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
