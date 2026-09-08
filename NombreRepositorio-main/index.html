@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Título</h1>
+    </header>
+
+    <nav class="box p-0 mt-4 barra-navegacion">
+        <div class="contenedor-menu">
+            <a href="index.html" class="has-text-dark p-3 enlace-menu">Inicio</a>
+            <a href="contacto.html" class="has-text-dark p-3 enlace-menu">Contacto</a>
+            <a href="pag2.html" class="has-text-dark p-3 enlace-menu">Otra Pagina</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="box mt-4 has-text-centered seccion-centrada">
+            <p>Esta es una página web</p>
+            <figure class="image mt-4 is-inline-block">
+                <img src="https://media1.tenor.com/m/YB3M7ApTeMkAAAAd/skeleton-dance.gif"
+                    alt="mira como muevel eskeleto" class="borde-curvo">
+            </figure>
+        </section>
+
+        <section class="box mt-4 seccion-centrada">
+            <h2 class="subBuzon">Buzón de sugerencias</h2>
+            <form id="miFormulario">
+                <div class="field">
+                    <label class="label has-text-weight-normal" for="campoTexto">Aquí escribe tu sugerencia:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="campoTexto" name="campoTexto" autocomplete="off">
+                    </div>
+                </div>
+
+                <p id="mensajeError" class="help is-danger" style="display: none;">Error: introducir texto válido</p>
+
+                <div class="field mt-4">
+                    <button class="button borde-curvo" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer has-text-centered">
+        <p>Pie de página</p>
+        <p class="mt-2">
+            &copy; 2026 - Todos los derechos reservados | <strong>Subdirección del kizazo</strong>
+        </p>
+
+        <a href="buzonsugerencias.html" class="button is-danger is-light boton-flotante" title="Ver basurero">
+            🗑️
+        </a>
+
+        <div id="modalExito" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-text-centered box caja-modal borde-estandar">
+                <figure class="image is-inline-block mb-3 gif-exito">
+                    <img src="https://media1.tenor.com/m/587AABroBfwAAAAC/dance-skeleton.gif" alt="Éxito"
+                        class="borde-curvo">
+                </figure>
+                <h2 class="title is-4 has-text-success">¡Sugerencia enviada!</h2>
+                <p class="mb-4 has-text-success-dark">Tu mensaje ha sido enviado al basurero con éxito.</p>
+                <button id="cerrarModal" class="button is-success is-outlined borde-curvo">Entendido</button>
+            </div>
+        </div>
+
+        <div id="modalAdvertencia" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-text-centered box caja-modal borde-advertencia">
+                <figure class="image is-inline-block mb-3 figura-responsiva">
+                    <img src="https://www.shutterstock.com/image-photo/human-skeleton-death-smoking-cigarette-260nw-2206566039.jpg"
+                        alt="Advertencia" class="imagen-recortada">
+                </figure>
+                <h2 class="title is-4 has-text-warning-dark">¡Oye!</h2>
+                <p class="mb-4 has-text-warning-dark">¿Qué estás escribiendo? Sé amable con tus compañeros.</p>
+                <button id="cerrarAdvertencia" class="button is-warning is-outlined borde-curvo">Entendido</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
