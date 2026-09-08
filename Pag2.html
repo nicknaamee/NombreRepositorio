@@ -19,7 +19,7 @@
         <h1>Título</h1>
     </header>
 
-    <nav class="barra-menu">
+    <nav class="barra-menu"> 
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -33,11 +33,11 @@
             <h2 class="title is-4">Mira esta pagina N°2 u.u</h2>
         </div>
 
-        <!-- texto y video-->
+        <!-- texto, video, artículo e imagen decorativa -->
         <section class="caja-contenido" style="max-width: 600px; margin: 0 auto 30px auto;">
             <p class="mb-4 has-text-centered">Reproduce el siguiente video sin salir de la pagina.</p>
             
-            <figure class="image is-16by9">
+            <figure class="image is-16by9 mb-5">
                 <iframe 
                     class="has-ratio"
                     src="https://www.youtube.com/embed/ptWOsBkLj_E" 
@@ -47,11 +47,30 @@
                     allowfullscreen>
                 </iframe>
             </figure>
+
+            <article class="message is-dark mb-5">
+                <div class="message-body">
+                    <strong>Mira esta imagen</strong>  ahora tienes mas dopamina.
+                </div>
+            </article>
+
+            <figure class="image">
+                <img src="img/foca.jpeg" 
+                     alt="Foca sonriente"
+                     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </figure>
         </section>
     </main>
 
     <footer>
-        <p>Pie de página</p>
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2026 - Todos los derechos reservados | <strong>te volvi a probar quiero un italiano y un completo </strong>
+            </p>
+            <p>
+                <a href="index.html">Inicio</a> | <a href="contacto.html">Contacto</a> | <a href="Pag2.html">pag2</a>
+            </p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
